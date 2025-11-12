@@ -1,0 +1,23 @@
+tickers:
+  - AAPL
+  - MSFT
+  - TSLA
+  - SPY
+  - BTC-USD
+start_date: '2020-01-01'
+end_date: '2024-11-30'
+data_source: 'yfinance'
+cleaning:
+  strategy: 'forward_fill'  # options: forward_fill | drop
+  align: 'intersection'     # options: intersection | union
+trading_days: 252
+rolling_windows:
+  - 21
+  - 63
+  - 252
+output:
+  raw_dir: 'data/raw'
+  processed_dir: 'data/processed'
+  plots_dir: 'reports/plots'
+logging:
+  level: INFO

@@ -1,0 +1,10 @@
+tickers:
+  - AAPL
+  - MSFT
+  - SPY
+  - BTC-USD
+
+start_date: "2022-01-01"
+end_date: "2025-01-01"
+
+data_dir: "data/raw"
